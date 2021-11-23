@@ -1,6 +1,6 @@
 import React,{ useCallback ,useState  } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import './App.css';
+import './styles/App.css';
 import Moodboard from './components/Moodboard';
 import MoodboardImage from "./components/MoodboardImage";
 import { DndProvider } from "react-dnd";
@@ -8,6 +8,7 @@ import {HTML5Backend} from "react-dnd-html5-backend";
 import {TouchBackend} from "react-dnd-touch-backend";
 import update from "immutability-helper";
 import { isTouchDevice } from "./utils/isTouchDevice";
+
 
 const backendForDND = isTouchDevice() ? TouchBackend : HTML5Backend;
 
